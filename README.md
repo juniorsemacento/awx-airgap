@@ -74,6 +74,11 @@ export KUBECONFIG=/etc/rancher/rke2/rke2.yaml
 kubectl apply -f awx-postgres-configuration.yaml
 ```
 
+```
+chmod +x CreatePSQLSecret.sh
+./CreatePSQLSecret.sh
+```
+
 This script will create the **awx-postgres-configuration** secret inside the **awx** namespace.
 
 ## Create kustomization.yaml
